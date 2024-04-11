@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adaptif Blok</title>
+  <link rel="stylesheet" href="repositiory.css">
+  <style>
+
+/* Genel stil */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1400px; /* Desktop */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.box {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.box h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Planşet */
+@media (max-width: 830px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Mobil */
+@media (max-width: 375px) {
+  .box {
+    padding: 10px;
+  }
+
+  .box h1 {
+    font-size: 24px;
+  }
+
+  .box p {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <h1>Welcome to Our Website!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button>Learn More</button>
+    </div>
+    <img src="image.jpg" alt="Placeholder Image">
+  </div>
+
+</body>
+</html>
+
+
